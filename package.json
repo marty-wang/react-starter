@@ -1,5 +1,5 @@
 {
-  "name": "@wang/react-starter",
+  "name": "@marty_wang/react-starter",
   "version": "1.0.0",
   "description": "The basic starter for react + typescript + webpack webapp",
   "scripts": {
