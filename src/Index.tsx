@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom';
 import { App } from 'src/components/App';
 import { Store } from 'src/store';
 
-import './styleSheet.css';
+import './stylesheet.css';
 
 const rootElement = document.getElementById('root');
 const store = new Store();
