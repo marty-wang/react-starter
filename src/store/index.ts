@@ -6,4 +6,8 @@ export class Store {
     public increase() {
         this.count++;
     }
+
+    public decrease() {
+        this.count--;
+    }
 }

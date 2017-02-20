@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { observer } from 'mobx-react';
 import { Store } from 'src/store';
+import { Counter } from 'src/components/Counter';
 
 export interface IAppProps {
-    store: Store
+    store: Store;
 }
 
 @observer
@@ -13,9 +14,10 @@ export class App extends React.Component<IAppProps, void> {
         return (
             <div>
                 <h1>Hello React!</h1>
-                <button onClick={() => store.increase()}>
-                    The current count: {store.count}. Click to increase count by 1.
-                </button>
+                <Counter
+                    count={store.count}
+                    onDecrease={() => store.decrease()}
+                    onIncrease={() => store.increase()}/>
             </div>
         );
     }
